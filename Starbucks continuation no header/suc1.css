@@ -1,0 +1,182 @@
+:root {
+--clr-primary-green: #006241;
+--clr-primary-pink: #eb81a5;
+--clr-primary-yellow: #f1ff67;
+--clr-primary-orange: #fc6446;
+--colorBlack10: rgba(0,0,0,.1);
+
+--columnWidthXLarge: 1440px;
+
+--fs-800: 2.5rem;
+
+--fs-primary-heading: var(--fs-800);
+
+--space-5: 32px;
+--space-4: 24px;
+
+}
+
+body{
+
+    font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif
+
+}
+
+
+
+/* removes margin and font */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+  }
+
+  
+  /* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+.contentColumn--xlarge,
+.container{
+    max-width: var(--columnWidthXLarge);
+}
+
+.container{
+    margin-inline: auto;
+}
+
+.even-columns{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.--fs-primary-heading{
+    font-size: var(--fs-primary-heading);
+    line-height: 1.1;
+}
+
+.button{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 100vmax;
+    padding: 7px 16px;
+    font-weight: 600;
+    font-size: var(--fs-button);
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: var(--clr-accent-400);
+}
+
+.buttonwhite{
+    color: white;
+}
+
+.button:hover{
+    background-color:var(--colorBlack10);
+}
+
+
+.--background-color-green{
+    background-color: var(--clr-primary-green);
+}
+
+.flex {
+    display: flex; /*understand main axis and cross axis*/
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.h-w-100{
+    height: 100%;
+    width: 100%;
+}
+
+.flex-column{
+    flex-direction: column; 
+    /* note this stretches all of the items, including buttons*/
+
+/*******************************/
+/*main axis defaults from left to right on the x axis. while the cross axis is a y axis*/
+/*however, this is not always the case, if you use flex-direction:column*/
+/*because I changed the main axis to column, now the cross axis is left to right.*/
+/* SO ALIGN-ITEMS ALIGNS ON CROSS AXIS****/
+/*justify-content aligns on main axis*/
+/*******************************/
+
+
+}
+
+.items-center{
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.Gutter {
+    padding: 32px 60px;
+}
+
+.top-margin{
+margin-top: 30px;
+}
+
+.border-box{
+    box-sizing: border-box;
+}
+
+
+.inherit{
+    box-sizing: inherit;
+}
+
+.border{
+ border: 5px solid pink;
+}
+
+.mb4{
+    margin-bottom: var(--space-4);
+}
+
+.xl {
+font-size: 28px;
+letter-spacing: 1px;
+line-height:33.6px;
+font-weight: 600;
+}
+
+.md{
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 36px;
+}
+
+.mt5{
+
+margin-top: 32px;
+
+}
+
+.text-semibold{
+    font-weight:600;
+
+}
+
+.my5{
+    margin: 0 var(--space-5);
+}

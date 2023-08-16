@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (min-width: 375px) {
+    .xl{
+        background-color: pink;
+
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .xl{
+        background-color: brown;
+
+    }
+}
+
+img{
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    height: auto
+}
+
+.container{
+
+max-width: 1440px;
+
+}
+
+.mauto{
+    margin: ;
+}
+
+.hw100{
+    height: 100%;
+    width: 100%;
+}
+
+.evencolgrid{
+    display: grid;
+    grid-auto-flow: column; /* had to look this one up splits in to 2*/ 
+    grid-auto-columns: 1fr;
+}
+
+/*.evencol{
+    display: flex;
+}
+
+.evencol > * {
+    flex: 1;
+}
+*/
+
+.borbox{
+    box-sizing: border-box;
+}
+
+
+.inher{
+    box-sizing: inherit;
+}
+
+.p5{
+    padding: 50px;
+}
+
+.flex{
+    display: flex;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.aic{
+    align-items: center;
+}
