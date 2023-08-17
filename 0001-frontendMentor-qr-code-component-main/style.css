@@ -1,0 +1,91 @@
+:root{
+--txt-400: 400;
+--txt-700: 700;
+
+-txt-size-p: 15px;
+
+--clr-white: hsl(0, 0%, 100%);
+--clr-grey: hsl(212, 45%, 89%)
+--clr-Blue: hsl(218, 44%, 22%);
+--clr-greyBlue: hsl(220, 15%, 55%);
+
+--mobile: 375px;
+--Desktop: 1440px;
+
+
+
+}
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(213, 225, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*dont forget this, the background color will still change but you need to specify the height*/
+}
+
+img,
+svg{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-component{
+    background-color: rgb(255, 255, 255);
+    max-width: 21rem;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.43);
+}
+
+.QR{
+    object-fit: cover;
+    
+}
+
+.body-wrapper{
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.img-container{
+    height: 300px;
+    overflow: hidden;
+    background-color: azure;
+    border-radius: 20px;
+}
+
+.section-title{
+    font-weight: var(--txt-700);
+    color: rgb(16, 31, 52);
+    font-size: var(--txt-size-p);
+    padding-inline: 20px;
+}
+
+.section-content{
+    font-weight: var(--txt-400);
+    color: rgb(156, 158, 173);
+}
